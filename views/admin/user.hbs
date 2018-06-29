@@ -1,0 +1,59 @@
+<h1>ADMIN - USERS</h1>
+<section class="get">
+    <h3>PRODUCTS ITEM</h3>
+    <a href="/admin/user/get-data">LOAD DATA</a>
+    <div>
+        {{# each items }}
+        <article class="item">
+            <div>Email: {{ this.email }}</div>
+            <div>Password: {{ this.password }}</div>
+            <div>ID: {{ this._id }}</div>
+        </article>
+        {{/each}}
+    </div>
+</section>
+
+<!--<section class="insert">-->
+    <!--<h3>TAMBAH USER</h3>-->
+    <!--<form action="/admin/user/insert" method="post">-->
+        <!--<div class="input">-->
+            <!--<label for="email">Email</label>-->
+            <!--<input type="text" id="email" name="email">-->
+        <!--</div>-->
+        <!--<div class="input">-->
+            <!--<label for="password">Password</label>-->
+            <!--<input type="text" id="password" name="password">-->
+        <!--</div>-->
+        <!--<button type="submit">INSERT</button>-->
+    <!--</form>-->
+<!--</section>-->
+
+<!--<section class="update">-->
+    <!--<h3>UPDATE USER</h3>-->
+    <!--<form action="/admin/user/update" method="post">-->
+        <!--<div class="input">-->
+            <!--<label for="id">ID</label>-->
+            <!--<input type="text" id="id" name="id">-->
+        <!--</div>-->
+        <!--<div class="input">-->
+            <!--<label for="email">Email</label>-->
+            <!--<input type="text" id="email" name="email">-->
+        <!--</div>-->
+        <!--<div class="input">-->
+            <!--<label for="password">Password</label>-->
+            <!--<input type="text" id="password" name="password">-->
+        <!--</div>-->
+        <!--<button type="submit">UPDATE</button>-->
+    <!--</form>-->
+<!--</section>-->
+
+<section class="delete">
+    <h3>HAPUS USER</h3>
+    <form action="/admin/user/delete" method="post">
+        <div class="input">
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <button type="submit">DELETE</button>
+    </form>
+</section>
