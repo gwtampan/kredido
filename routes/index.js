@@ -80,7 +80,7 @@ router.post('/checkout', isLoggedIn, function(req, res, next) {
     var cart = new Cart(req.session.cart);
     
     var stripe = require("stripe")(
-        "sk_test_fwmVPdJfpkmwlQRedXec5IxR"
+        "sk_test_djuHaqE8vAeCykiz66zCiXey"
     );
 
     stripe.charges.create({
